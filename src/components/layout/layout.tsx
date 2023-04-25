@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './navbar';
 
 // ts
 interface Props {
@@ -7,9 +8,12 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div className="max-w-[1500px] p-4">
-            {children}
-        </div>
+        <>
+            <Navbar />
+            <div className="max-w-[1500px] p-4">
+                {children}
+            </div>
+        </>
     )
 }
 
