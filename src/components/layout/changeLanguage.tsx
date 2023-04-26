@@ -18,24 +18,24 @@ const ChangeLanguage = () => {
     return (
         <ActionIcon className='relative w-8'>
             {
-                router.locale === "fa" ?
+                router.locale === "en" ?
                     <Image
                         alt='iran'
                         src={"/iran.png"}
                         fill
                         className='object-contain'
                         quality={100}
-                        onClick={() => handleLocaleChange("en")}
+                        onClick={() => handleLocaleChange("fa")}
                     />
                     :
-                    router.locale === "en" &&
+                    router.locale === "fa" &&
                     <Image
                         alt='british'
                         src={"/british.png"}
                         fill
                         className='object-contain'
                         quality={100}
-                        onClick={() => handleLocaleChange("fa")}
+                        onClick={() => handleLocaleChange("en")}
                     />
             }
         </ActionIcon>
