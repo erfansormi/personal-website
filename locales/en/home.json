@@ -1,6 +1,6 @@
 {
-    "sidebar": {
-        "name": "Erfan Sormi",
-        "skill": "frontend developer"
-    }
+    "locale": "en",
+    "name": "Erfan Sormi",
+    "skill": "frontend developer",
+    "resume": "download resume"
 }
