@@ -12,12 +12,12 @@ export default function Home() {
       <div className='flex'>
 
         {/* sidebar */}
-        <aside className='max-w-[280px] w-full'>
+        <aside className='max-w-[300px] w-full shadow-md'>
           <SidebarContainer />
         </aside>
 
         {/* content */}
-        <div className='w-full dark:bg-dark-700 bg-light-200'>
+        <div className='w-full dark:bg-dark-600 bg-light-200'>
 
         </div>
       </div>
