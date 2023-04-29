@@ -2,16 +2,11 @@ import React from 'react'
 import Image from 'next/image';
 import { useTranslation } from "next-i18next";
 
-// types
-import { Locales } from '@/types/locales';
-
-// icons
-import { BiCheck } from "react-icons/bi";
-import { CgSoftwareDownload } from "react-icons/cg";
-
 // data
-import { communicationData, personalInfoData, skillsSummaryData, socialNetworksData } from './sidebarData';
-import { Divider, ThemeIcon } from '@mantine/core';
+import { socialNetworksData } from './sidebarData';
+
+// components
+import ScrollbarContent from './scrollbarContent';
 
 const SidebarContainer = () => {
     const { t } = useTranslation("home");
@@ -19,12 +14,14 @@ const SidebarContainer = () => {
     const bottomFooterRef = React.useRef<HTMLElement>(null);
 
     return (
-        <div className='dark:bg-dark-750 bg-light-400 capitalize relative h-[90vh] overflow-hidden'>
+        <div
+            className='dark:bg-dark-750 bg-light-400 capitalize sticky overflow-hidden content-height'
+        >
 
             {/* fixed top box */}
             <div
                 ref={topBoxRef}
-                className={`absolute top-0 right-0 left-0 px-6 py-8 shadow-md dark:bg-dark-700.09 bg-light-400.09`}
+                className={`absolute top-0 right-0 left-0 px-6 py-8 shadow-md dark:bg-dark-700.9 bg-light-400.09`}
             >
                 <div className='flex flex-col gap-2 items-center'>
                     {/* picture */}
@@ -55,94 +52,11 @@ const SidebarContainer = () => {
             </div>
 
             {/* scrollbar content  */}
-            <div className='flex flex-col px-6 py-8 gap-y-6 secondary-text overflow-y-scroll h-full'>
+            <ScrollbarContent topBoxRef={topBoxRef} bottomFooterRef={bottomFooterRef} />
 
-                {/* personal info */}
-                <div
-                    className='flex flex-col gap-y-2.5'
-                    style={{ marginTop: topBoxRef.current ? topBoxRef.current.clientHeight : 200 }}
-                >
-                    {
-                        personalInfoData[t("locale") as Locales].map((item, index) =>
-                            <div key={index}>
-                                <div className='flex items-center justify-between text-sm'>
-                                    <span className='font-medium primary-text'>
-                                        {item.label}
-                                    </span>
-                                    <span>
-                                        {item.value}
-                                    </span>
-                                </div>
-                            </div>
-                        )
-                    }
-                </div>
-
-                <Divider />
-
-                {/* communication */}
-                <div className='flex flex-col gap-y-2.5 normal-case'>
-                    {
-                        communicationData[t("locale") as Locales].map((item, index) =>
-                            <div key={index * 7}>
-                                <div className='flex items-center text-sm gap-x-4'>
-                                    <span className='font-medium'>
-                                        <ThemeIcon>
-                                            {<item.icon className='text-lg' />}
-                                        </ThemeIcon>
-                                    </span>
-                                    <span>
-                                        {item.value}
-                                    </span>
-                                </div>
-                            </div>
-                        )
-                    }
-                </div>
-
-                <Divider />
-
-                {/* summary of skills */}
-                <div className='flex flex-col gap-y-2'>
-                    {
-                        skillsSummaryData[t("locale") as Locales].map((item, index) =>
-                            <div key={index * 12}>
-                                <div className='flex items-center text-sm gap-x-2'>
-                                    <span className='font-medium primary-color text-xl mb-1'>
-                                        <BiCheck />
-                                    </span>
-                                    <span>
-                                        {item.value}
-                                    </span>
-                                </div>
-                            </div>
-                        )
-                    }
-                </div>
-
-                <Divider />
-
-                {/* download resume */}
-                <div
-                    style={{ marginBottom: bottomFooterRef.current ? bottomFooterRef.current.clientHeight : 100 }}
-                >
-                    <a
-                        href='#'
-                        className='flex items-center gap-x-1 hover-primary-text'
-                    >
-                        <span>
-                            {t("resume")}
-                        </span>
-                        <span className='flex text-2xl mb-1.5'>
-                            <CgSoftwareDownload />
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            {/* social networks */}
+            {/* social networks in fixed bottom footer */}
             <footer
-                className='absolute bottom-0 left-0 right-0 px-4 py-4 shadow-md dark:bg-dark-700.09 bg-light-400.09'
+                className='absolute bottom-0 left-0 right-0 px-4 py-4 shadow-md dark:bg-dark-700.9 bg-light-400.09'
                 ref={bottomFooterRef}
             >
                 <div className='flex items-center justify-center gap-5'>
@@ -152,7 +66,7 @@ const SidebarContainer = () => {
                                 <a
                                     href={item.address}
                                     target='_blank'
-                                    className='dark:text-dark-100 dark:hover:text-white text-dark-400 hover:text-dark-900 transition-colors duration-300'
+                                    className='secondary-text hover-primary-text'
                                 >
                                     {<item.icon />}
                                 </a>

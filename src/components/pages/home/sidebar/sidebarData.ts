@@ -93,6 +93,6 @@ export const skillsSummaryData = {
         { value: "git, github" },
         { value: "javascript, typescript" },
         { value: "react js, next js" },
-        { value: "mui، mantine" },
+        { value: "mui, mantine" },
     ]
 }
