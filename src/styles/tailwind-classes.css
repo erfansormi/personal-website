@@ -1,0 +1,25 @@
+/* texts color */
+.primary-text {
+  @apply dark:text-light-100 text-dark-900;
+}
+
+.secondary-text {
+  @apply text-dark-400 dark:text-gray-400;
+}
+
+.hover-primary-text,
+.hover-secondary-text {
+  @apply transition-colors duration-300;
+}
+
+.hover-primary-text:hover {
+  @apply dark:text-light-100 text-dark-900;
+}
+
+.hover-secondary-text:hover {
+  @apply text-dark-400 dark:text-gray-400;
+}
+
+.primary-color {
+  @apply dark:text-yellow-600 text-blue-600;
+}

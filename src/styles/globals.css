@@ -2,72 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./variables.css");
+@import url("./tailwind-classes.css");
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    text-transform: capitalize;
-    font-weight: bold;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 h4 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 h6 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 img,
 button {
-    user-select: none;
-}
-
-.primary-text {
-    @apply dark:text-light-100 text-dark-900;
-}
-
-.secondary-text {
-    @apply text-dark-400 dark:text-dark-100;
-}
-
-.hover-primary-text:hover {
-    @apply dark:text-light-100 text-dark-900;
-}
-
-.hover-secondary-text:hover {
-    @apply text-dark-400 dark:text-dark-100;
-}
-
-.primary-color {
-    @apply dark:text-yellow-600 text-blue-600;
+  user-select: none;
 }
 
 /* hide scroll bar */
 /* chrome */
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-body{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.content-height {
+  height: calc(
+    100vh - var(--navbar-height) - var(--layout-p-y) - var(--layout-p-y)
+  );
 }
