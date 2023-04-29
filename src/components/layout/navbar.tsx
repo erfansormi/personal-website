@@ -11,7 +11,7 @@ const Navbar = () => {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
     return (
-        <nav className='h-10 px-6 flex items-center justify-end gap-x-2 dark:bg-dark-750 bg-light-200 shadow-md sticky top-0 z-50'>
+        <nav className='h-[var(--navbar-height)] w-full px-6 flex items-center justify-end gap-x-2 dark:bg-dark-750 bg-light-200 shadow-md sticky top-0 z-50'>
 
             {/* change dark or light mode */}
             <div>

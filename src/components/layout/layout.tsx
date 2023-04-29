@@ -8,12 +8,12 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <>
+        <div className='flex flex-col items-center max-w-[1500px] m-auto overflow-hidden'>
             <Navbar />
-            <div className="max-w-[1500px] p-4">
+            <div className="py-[var(--layout-p-y)] w-full">
                 {children}
             </div>
-        </>
+        </div>
     )
 }
 
