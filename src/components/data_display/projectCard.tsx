@@ -104,7 +104,7 @@ const ProjectCard = ({ data }: { data: Project }) => {
             </figure>
 
             {/* level */}
-            <span className='absolute -top-3 -end-2'>
+            <span className='absolute -top-3 end-0'>
                 <Badge variant='outline' radius={"sm"}>
                     {data.level}
                 </Badge>

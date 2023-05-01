@@ -33,7 +33,7 @@ const SkillCard = ({ image, level, title }: Props) => {
                 </div>
 
                 {/* level */}
-                <span className="absolute -end-1 -top-3">
+                <span className="absolute end-0 -top-3">
                     <Badge variant='filled' className='text-[0.55rem]' radius="sm">
                         {level}
                     </Badge>
