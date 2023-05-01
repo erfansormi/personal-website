@@ -2,20 +2,23 @@ import React from 'react'
 import Image from 'next/image';
 import { useTranslation } from "next-i18next";
 
+// font
+import { vazir } from '@/pages/_app';
+
 // data
 import { socialNetworksData } from './sidebarData';
 
 // components
 import ScrollbarContent from './scrollbarContent';
 
-const SidebarContainer = () => {
+const SidebarContainer = ({ className }: { className?: string }) => {
     const { t } = useTranslation("home");
     const topBoxRef = React.useRef<HTMLDivElement>(null);
     const bottomFooterRef = React.useRef<HTMLElement>(null);
 
     return (
         <div
-            className='dark:bg-dark-750 bg-light-300 capitalize sticky overflow-hidden content-height'
+            className={`dark:bg-dark-750 bg-light-300 capitalize sticky overflow-hidden content-height ${className} ${vazir.className}`}
         >
 
             {/* fixed top box */}
@@ -37,7 +40,7 @@ const SidebarContainer = () => {
 
                     {/* name */}
                     <div>
-                        <h3 className='text-lg'>
+                        <h3 className='text-lg font-vazir'>
                             {t("name")}
                         </h3>
                     </div>
