@@ -3,6 +3,7 @@ import React from 'react';
 // icons
 import { TbSunHigh, TbMoonStars } from "react-icons/tb";
 import { GoKebabVertical } from "react-icons/go";
+import { IoClose } from "react-icons/io5";
 
 // components
 import ChangeLanguage from './changeLanguage';
@@ -44,11 +45,26 @@ const Navbar = () => {
                 {/* sidebar */}
                 {/* (if size >= lg) display:none */}
                 <div className='lg:hidden' onClick={open}>
-                    <GoKebabVertical />
+                    <ActionIcon>
+                        <GoKebabVertical />
+                    </ActionIcon>
                 </div>
 
-                <Drawer opened={opened} onClose={close} withCloseButton={false} size={360} padding={0}>
+                <Drawer
+                    opened={opened}
+                    onClose={close}
+                    withCloseButton={false}
+                    size={360}
+                    padding={0}
+                    sx={{ position: "relative" }}
+                >
                     <SidebarContainer className='h-screen' />
+                    <ActionIcon
+                        className='absolute top-1 end-1'
+                        onClick={close}
+                    >
+                        <IoClose className='text-2xl' />
+                    </ActionIcon>
                 </Drawer>
             </div>
         </nav>
