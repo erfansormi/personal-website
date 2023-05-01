@@ -44,6 +44,10 @@ button {
   user-select: none;
 }
 
+button{
+  text-transform: capitalize !important;
+}
+
 /* hide scroll bar */
 /* chrome */
 ::-webkit-scrollbar {
