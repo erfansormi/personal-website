@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
 
 // mantine
 import { Badge } from '@mantine/core';
@@ -12,10 +11,8 @@ interface Props {
 }
 
 const SkillCard = ({ image, level, title }: Props) => {
-    const { t } = useTranslation("home")
-
     return (
-        <div className='relative shadow-md bg-light-800 dark:bg-dark-700 p-4 rounded-md h-32 flex items-center'>
+        <div className='relative shadow-md bg-light-500 dark:bg-dark-700 p-4 rounded-md h-32 flex items-center'>
             <div className='flex items-center justify-between w-full'>
 
                 {/* image */}
