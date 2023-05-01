@@ -1,33 +1,24 @@
-
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 // components
 import Layout from '@/components/layout/layout'
-import SidebarContainer from '@/components/pages/home/sidebar/sidebarContainer'
-import ContentContainer from '@/components/pages/home/content/contentContainer';
+import TopBox from '@/components/pages/home/topBox';
+import Skills from '@/components/pages/home/skills';
+import Projects from '@/components/pages/home/projects';
 
 export default function Home() {
   return (
     <Layout>
-      <div className='flex'>
-
-        {/* sidebar */}
-        <aside className='max-w-[var(--sidebar-width)] w-full shadow-md'>
-          <SidebarContainer />
-        </aside>
-
-        {/* content */}
-        <div className='w-full'>
-          <ContentContainer />
-        </div>
-      </div>
+      <TopBox />
+      <Skills />
+      <Projects />     
     </Layout>
   )
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale as string, ["common", 'home', "skills"]))
+    ...(await serverSideTranslations(locale as string, ["common", 'home']))
   }
 });
