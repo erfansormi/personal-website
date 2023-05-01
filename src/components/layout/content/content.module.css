@@ -1,6 +1,5 @@
-.underside_bg,
-.topBox {
-  background-image: url("../../../../../public/top-bg.jpg");
+.underside_bg {
+  background-image: url("../../../../public/top-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,8 +12,7 @@
   z-index: -1;
 }
 
-.underside_bg::after,
-.topBox::after {
+.underside_bg::after {
   content: "";
   position: absolute;
   inset: 0;
