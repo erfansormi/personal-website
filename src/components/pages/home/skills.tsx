@@ -17,7 +17,7 @@ const Skills = () => {
     return (
         <div>
             <SectionTitle title={t("skills.title")} />
-            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
+            <div className='grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6'>
                 {
                     skillsData[t("locale") as Locales].map((item, index) =>
                         <section key={index * 17}>

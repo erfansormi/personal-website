@@ -3,12 +3,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.underside_bg,
-.underside_bg_container {
-  inset-inline-start: calc(var(--sidebar-width) + var(--layout-p-x));
-  inset-inline-end: 0;
   z-index: -1;
 }
 

@@ -19,22 +19,22 @@ const ProjectCard = ({ data }: { data: Project }) => {
                 </h5>
             </div>
 
-            <figure className='flex gap-8'>
+            <figure className='flex flex-col xl:flex-row gap-8'>
                 {/* image */}
-                <div className='w-2/5'>
+                <div className='w-full xl:w-2/5'>
                     <div className='relative h-52'>
                         <Image
                             fill
                             alt={`${data.title} project`}
                             src={data.image}
-                            className='object-cover rounded'
+                            className='xl:object-cover object-contain rounded'
                         />
                     </div>
                 </div>
 
                 {/* project info */}
-                <figcaption className='w-3/5 flex flex-col gap-3' >
-                    <div className='flex gap-3 justify-around'>
+                <figcaption className='w-full xl:w-3/5 flex flex-col gap-5' >
+                    <div className='flex sm:flex-row flex-col gap-x-3 gap-y-6 px-6 sm:px-0 justify-around'>
                         {/* technologies */}
                         <div className='flex flex-col gap-3'>
                             <div>
@@ -74,7 +74,7 @@ const ProjectCard = ({ data }: { data: Project }) => {
                                 </h6>
                             </div>
                             <div className='text-sm font-thin'>
-                                <ul className='secondary-text marker:text-blue-800 dark:marker:text-yellow-600 list-disc flex flex-col gap-1.5 max-w-[310px] capitalize'>
+                                <ul className='secondary-text marker:text-blue-800 dark:marker:text-yellow-600 list-disc flex flex-col gap-1.5 sm:max-w-[310px] capitalize'>
                                     {
                                         data.attributes.map(item =>
                                             <li key={item}>

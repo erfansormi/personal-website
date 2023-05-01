@@ -21,10 +21,10 @@ const TopBox = () => {
                         {/* box text */}
                         <div className='flex items-center justify-center h-full w-full text-dark-900 dark:text-light-100'>
                             <div className='flex flex-col gap-6 text-center'>
-                                <h1 className='text-5xl'>
+                                <h1 className='md:text-5xl sm:text-4xl text-2xl'>
                                     {t("introduction")}
                                 </h1>
-                                <h2 className='text-4xl'>
+                                <h2 className='md:text-4xl sm:text-3xl text-2xl'>
                                     {t("welcome")}
                                 </h2>
                                 <div className='flex justify-center'>
