@@ -44,7 +44,7 @@ const MantineTheme = ({ children }: Props) => {
                     black: '#14141c',
                     primaryColor: colorScheme === "dark" ? "yellow" : "blue",
                     primaryShade: {
-                        dark: 8,
+                        dark: 7,
                         light: 6
                     },
                     dir: router.locale === "fa" ? "rtl" : "ltr",
@@ -57,8 +57,15 @@ const MantineTheme = ({ children }: Props) => {
                                 root: {
                                     backgroundColor:
                                         variant === 'filled'
-                                            ? `${theme.colors[params.color || theme.primaryColor][theme.colorScheme === "light" ? 6 : 8]} !important`
+                                            ? `${theme.colors[params.color || theme.primaryColor][theme.colorScheme === "light" ? 6 : 7]} !important`
                                             : undefined,
+                                    transition:"0.3s all ease-in",
+                                    ":hover": {
+                                        backgroundColor:
+                                            variant === 'filled'
+                                                ? `${theme.colors[params.color || theme.primaryColor][theme.colorScheme === "light" ? 8 : 9]} !important`
+                                                : undefined
+                                    }
                                 },
                             }),
                         },
