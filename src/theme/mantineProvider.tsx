@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { MantineProvider, ColorScheme, ColorSchemeProvider, Tuple, DefaultMantineColor, Global } from '@mantine/core';
+import { MantineProvider, ColorScheme, ColorSchemeProvider, Tuple, DefaultMantineColor, Global, ButtonStylesParams } from '@mantine/core';
+import { useRouter } from 'next/router';
 
 // ts
 interface Props {
@@ -24,6 +25,9 @@ const MantineTheme = ({ children }: Props) => {
         document.querySelector("html")?.classList.toggle("dark");
     }
 
+    // locale
+    const router = useRouter();
+
     return (
         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             <MantineProvider
@@ -33,16 +37,31 @@ const MantineTheme = ({ children }: Props) => {
                     colorScheme,
                     colors: {
                         dark: ["#9ca3af", "#757575", "#6b7280", "#4b5563", "#374151", "#2b2b35", "#20202a", "#191923", "#14141c", "#0e0e14"],
-                        light: ["#FBFEFF", "#F8FCFF", "#F4FBFE", "#F1F9FE", "#EDF8FE", "#E9F7FE", "#E6F5FE", "#E2F4FD", "#e3fafd", "#ddf4f7"],
+                        light: ["#f0f2ff", "#e4e8ff", "#d9dffd", "#D2DAFF", "#bdc8fb", "#AAC4FF", "#B1B2FF", "#999af7", "#7f80f7"],
                         yellow: ["#fefce8", "#fef9c3", "#fef08a", "#fde047", "#FFD43B", "#FCC419", "#FAB005", "#F59F00", "#F08C00", "#E67700"],
                     },
                     white: '#F4FBFE',
                     black: '#14141c',
-                    dir: "rtl",
                     primaryColor: colorScheme === "dark" ? "yellow" : "blue",
                     primaryShade: {
-                        dark: 6,
+                        dark: 8,
                         light: 6
+                    },
+                    dir: router.locale === "fa" ? "rtl" : "ltr",
+                    fontFamily: "inherit",
+                    defaultRadius: "sm",
+                    components: {
+                        Button: {
+                            // Subscribe to theme and component params
+                            styles: (theme, params: ButtonStylesParams, { variant }) => ({
+                                root: {
+                                    backgroundColor:
+                                        variant === 'filled'
+                                            ? `${theme.colors[params.color || theme.primaryColor][theme.colorScheme === "light" ? 6 : 8]} !important`
+                                            : undefined,
+                                },
+                            }),
+                        },
                     }
                 }}
             >
@@ -50,12 +69,12 @@ const MantineTheme = ({ children }: Props) => {
                     styles={(theme) => ({
                         ".mantine-Divider-root": {
                             borderColor: theme.colorScheme === "dark" ? theme.colors.dark[3] : "#d1d5db"
-                        }
+                        },
                     })}
                 />
                 {children}
             </MantineProvider>
-        </ColorSchemeProvider>
+        </ColorSchemeProvider >
     )
 }
 
