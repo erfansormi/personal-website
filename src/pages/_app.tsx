@@ -5,7 +5,7 @@ import { appWithTranslation } from "next-i18next";
 // font
 import { Vazirmatn } from 'next/font/google';
 export const vazir = Vazirmatn({
-  weight: ["300", "400", "500", "600", "700", "900"],
+  weight: ["200", "300", "400", "500", "600", "700", "900"],
   variable: '--font-vazir',
   subsets: ['latin', "arabic", "latin-ext"],
 })
