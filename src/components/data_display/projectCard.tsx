@@ -28,6 +28,9 @@ const ProjectCard = ({ data }: { data: Project }) => {
                             alt={`${data.title} project`}
                             src={data.image}
                             className='xl:object-cover object-contain rounded'
+                            sizes="(max-width: 600px) 95vw,
+                            (max-width: 1280px) 65vw,
+                            28vw"
                         />
                     </div>
                 </div>

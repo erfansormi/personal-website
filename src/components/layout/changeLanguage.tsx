@@ -24,7 +24,10 @@ const ChangeLanguage = () => {
                         src={"/iran.png"}
                         fill
                         className='object-contain'
-                        quality={100}
+                        quality={90}
+                        sizes="(max-width: 600px) 15vw,
+                                (max-width: 1200px) 10vw,
+                                5vw"
                         onClick={() => handleLocaleChange("fa")}
                     />
                     :
@@ -34,7 +37,10 @@ const ChangeLanguage = () => {
                         src={"/british.png"}
                         fill
                         className='object-contain'
-                        quality={100}
+                        quality={90}
+                        sizes="(max-width: 600px) 15vw,
+                                (max-width: 1200px) 10vw,
+                                5vw"
                         onClick={() => handleLocaleChange("en")}
                     />
             }

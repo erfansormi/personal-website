@@ -1,8 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
-
-// css
-import styles from "./home.module.css";
 
 const TopBox = () => {
     const { t } = useTranslation("home");
@@ -15,7 +13,18 @@ const TopBox = () => {
                 <div className='absolute -top-7 right-10 left-10 dark:bg-dark-700 bg-light-400 h-12 rounded-md z-[-1]'></div>
 
                 {/* background image */}
-                <div className={`rounded h-full overflow-hidden dark:after:bg-[rgba(45,45,58,.7)] after:bg-[rgba(210,218,255,.5)] ${styles.topBox}`}>
+                <div className={`rounded h-full relative overflow-hidden dark:after:bg-[rgba(45,45,58,.7)] after:bg-[rgba(210,218,255,.5)] after:absolute after:inset-0`}>
+                    <Image
+                        alt='nature'
+                        src={"/top-bg.jpg"}
+                        priority
+                        fill
+                        className='object-cover'
+                        quality={50}
+                        sizes="(max-width: 1024px) 90vw,
+                                (max-width: 1500px) 75vw,
+                                60vw"
+                    />
 
                     <div className='absolute inset-0 z-20'>
                         {/* box text */}

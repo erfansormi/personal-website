@@ -22,6 +22,8 @@ const SkillCard = ({ image, level, title }: Props) => {
                         alt={title}
                         src={image}
                         className='object-contain rounded-md'
+                        sizes="(max-width: 340px) 25vw,
+                          10vw"
                     />
                 </div>
 

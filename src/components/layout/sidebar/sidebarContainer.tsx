@@ -34,7 +34,11 @@ const SidebarContainer = ({ className }: { className?: string }) => {
                             alt='Erfan Sormi'
                             src={"/erfansormi-1.jpg"}
                             className='object-cover rounded-full'
-                            quality={100}
+                            quality={85}
+                            sizes="(max-width: 400px) 32vw,
+                            (max-width: 768px) 22vw,
+                            (max-width: 1024px) 14vw,
+                            8vw"
                         />
                     </div>
 
