@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app'
 import '@/styles/globals.css'
 import { appWithTranslation } from "next-i18next";
+import { Analytics } from '@vercel/analytics/react';
 
 // font
 import { Vazirmatn } from 'next/font/google';
@@ -50,6 +51,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         <main className={`${vazir.className} ${vazir.variable}`}>
           <Component {...pageProps} />
         </main>
+
+        <Analytics />
       </MantineTheme>
     </>
   )
