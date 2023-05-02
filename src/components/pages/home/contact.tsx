@@ -124,6 +124,7 @@ const Contact = () => {
                             type="submit"
                             loading={loading}
                             disabled={loading}
+                            size='md'
                             sx={{
                                 ".mantine-Button-icon": {
                                     insetInlineEnd: "10px",

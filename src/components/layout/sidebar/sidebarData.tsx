@@ -46,11 +46,11 @@ export const communicationData = {
     fa: [
         {
             icon: TbMail,
-            value: "erfansormi97@gmail.com"
+            value: <a href="mailto:erfansormi97@gmail.com" className="hover-primary-text">erfansormi97@gmail.com</a>
         },
         {
             icon: TbPhone,
-            value: "2453 911 0939"
+            value: <a href="tel:09399112453" className="hover-primary-text">2453 911 0939</a>
         },
         {
             icon: MdOutlineLocationOn,
@@ -60,11 +60,11 @@ export const communicationData = {
     en: [
         {
             icon: TbMail,
-            value: "erfansormi97@gmail.com"
+            value: <a href="mailto:erfansormi97@gmail.com" className="hover-primary-text">erfansormi97@gmail.com</a>
         },
         {
             icon: TbPhone,
-            value: "0939 911 2453"
+            value: <a href="tel:09399112453" className="hover-primary-text">0939 911 2453</a>
         },
         {
             icon: MdOutlineLocationOn,
