@@ -15,7 +15,7 @@ const ContentContainer = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             {/* sections */}
-            <div className='flex-col flex gap-y-10 md:px-8'>
+            <div className='flex-col flex gap-y-14 md:px-8'>
                 {children}
             </div>
         </div>

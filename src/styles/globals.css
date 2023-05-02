@@ -4,6 +4,7 @@
 
 @import url("./variables.css");
 @import url("./tailwind-classes.css");
+@import url("./mantine.css");
 
 h1,
 h2,

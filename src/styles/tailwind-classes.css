@@ -23,8 +23,3 @@
 .primary-color {
   @apply dark:text-yellow-600 text-blue-600;
 }
-
-.mantine-Drawer-content,
-.mantine-Drawer-header {
-  @apply dark:bg-dark-750 bg-light-300;
-}

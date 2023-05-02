@@ -10,7 +10,7 @@ const ProjectCard = ({ data }: { data: Project }) => {
     const { t } = useTranslation("home");
 
     return (
-        <div className='shadow-md rounded-md dark:bg-dark-700 bg-light-500 px-4 py-6 relative'>
+        <div className='shadow-md rounded-md dark:bg-dark-700 bg-light-400 px-4 py-6 relative'>
 
             {/* title */}
             <div className='w-full text-center mb-7'>

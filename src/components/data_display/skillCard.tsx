@@ -12,7 +12,7 @@ interface Props {
 
 const SkillCard = ({ image, level, title }: Props) => {
     return (
-        <div className='relative shadow-md bg-light-500 dark:bg-dark-700 p-4 rounded-md h-32 flex items-center'>
+        <div className='relative shadow-md bg-light-400 dark:bg-dark-700 p-4 rounded-md h-32 flex items-center'>
             <div className='flex items-center justify-between w-full'>
 
                 {/* image */}

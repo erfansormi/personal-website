@@ -1,0 +1,8 @@
+.mantine-Drawer-content,
+.mantine-Drawer-header {
+  @apply dark:bg-dark-750 bg-light-300;
+}
+
+.mantine-Notification-root {
+  @apply dark:bg-dark-600;
+}
