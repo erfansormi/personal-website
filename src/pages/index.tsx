@@ -6,13 +6,15 @@ import Layout from '@/components/layout/layout'
 import TopBox from '@/components/pages/home/topBox';
 import Skills from '@/components/pages/home/skills';
 import Projects from '@/components/pages/home/projects';
+import Contact from '@/components/pages/home/contact';
 
 export default function Home() {
   return (
     <Layout>
       <TopBox />
       <Skills />
-      <Projects />     
+      <Projects />
+      <Contact />
     </Layout>
   )
 }
