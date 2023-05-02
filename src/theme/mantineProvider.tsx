@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { MantineProvider, ColorScheme, ColorSchemeProvider, Tuple, DefaultMantineColor, Global, ButtonStylesParams } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
 import { useRouter } from 'next/router';
 
 // ts
@@ -59,7 +60,7 @@ const MantineTheme = ({ children }: Props) => {
                                         variant === 'filled'
                                             ? `${theme.colors[params.color || theme.primaryColor][theme.colorScheme === "light" ? 6 : 7]} !important`
                                             : undefined,
-                                    transition:"0.3s all ease-in",
+                                    transition: "0.3s all ease-in",
                                     ":hover": {
                                         backgroundColor:
                                             variant === 'filled'
@@ -69,6 +70,34 @@ const MantineTheme = ({ children }: Props) => {
                                 },
                             }),
                         },
+                        TextInput: {
+                            styles: () => ({
+                                root: {
+                                    ".mantine-Input-icon": {
+                                        insetInlineStart: 0,
+                                    },
+                                    ".mantine-Input-input": {
+                                        textAlign: "start",
+                                        paddingInlineStart: "2.25rem"
+                                    }
+                                },
+                            }),
+                        },
+                        Textarea: {
+                            styles: () => ({
+                                root: {
+                                    ".mantine-Textarea-icon": {
+                                        alignItems: "start",
+                                        paddingTop: 11,
+                                        insetInlineStart: 0,
+                                    },
+                                    ".mantine-Input-input": {
+                                        textAlign: "start",
+                                        paddingInlineStart: "2.25rem"
+                                    }
+                                },
+                            }),
+                        }
                     }
                 }}
             >
@@ -80,6 +109,7 @@ const MantineTheme = ({ children }: Props) => {
                     })}
                 />
                 {children}
+                <Notifications position='bottom-center' className='shadow-sm' />
             </MantineProvider>
         </ColorSchemeProvider >
     )
