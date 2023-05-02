@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import ContentContainer from './content/contentContainer';
 import SidebarContainer from './sidebar/sidebarContainer';
+import Footer from './footer';
 
 // ts
 interface Props {
@@ -24,6 +25,7 @@ const Layout = ({ children }: Props) => {
                     <div className='w-full'>
                         <ContentContainer>
                             {children}
+                            <Footer />
                         </ContentContainer>
                     </div>
                 </div>

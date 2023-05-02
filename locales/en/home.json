@@ -29,5 +29,6 @@
         },
         "sendSuccess": "Message sent successfully",
         "sendFailure": "There was a problem sending the message!"
-    }
+    },
+    "footer": "© 2023 All Rights Reserved."
 }
