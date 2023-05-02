@@ -15,5 +15,19 @@
         "title": "projects",
         "website": "website",
         "github": "github"
+    },
+    "contact": {
+        "title": "contact",
+        "email": "email",
+        "name": "name",
+        "message": "message",
+        "submit": "submit",
+        "errors": {
+            "required": "is required",
+            "email": "the email format entered is incorrect",
+            "minLength": "enter at least 3 characters"
+        },
+        "sendSuccess": "Message sent successfully",
+        "sendFailure": "There was a problem sending the message!"
     }
 }
