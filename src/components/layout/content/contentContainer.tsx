@@ -6,9 +6,9 @@ const ContentContainer = ({ children }: { children: React.ReactNode }) => {
         <div className='relative w-full overflow-y-scroll content-height'>
             {/* underside background content */}
             <div
-                className={`fixed h-[inherit] z-[-1] dark:bg-dark-700 bg-dark-400 start-0 end-0 lg:end-[var(--layout-p-x)] lg:start-[var(--layout-p-x)]`}
+                className={`fixed h-[inherit] z-[-1] dark:bg-[rgb(30,30,40)] bg-[rgb(210,212,221)] start-0 end-0 lg:end-[var(--layout-p-x)] lg:start-[var(--layout-p-x)]`}
             >
-                <div className={`relative z-[-1] dark:after:bg-[rgba(30,30,40,.90)] after:bg-[rgba(238,241,255,.85)] h-[430px] rounded-e-md after:inset-0 after:absolute`}>
+                <div className={`relative dark:after:bg-[rgba(30,30,40,.90)] after:bg-[rgba(238,241,255,.85)] h-[430px] rounded-e-md after:inset-0 inset-0 after:absolute`}>
                     <Image
                         alt='nature'
                         src={"/top-bg.jpg"}
