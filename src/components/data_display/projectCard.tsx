@@ -14,9 +14,9 @@ const ProjectCard = ({ data }: { data: Project }) => {
 
             {/* title */}
             <div className='w-full text-center mb-7'>
-                <h5 className='text-xl'>
+                <h4 className='text-xl'>
                     {data.title}
-                </h5>
+                </h4>
             </div>
 
             <figure className='flex flex-col xl:flex-row gap-8'>

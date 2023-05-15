@@ -77,14 +77,17 @@ export const socialNetworksData = [
     {
         icon: BsLinkedin,
         address: "https://www.linkedin.com/in/erfan-sormi/",
+        name: "linkedin"
     },
     {
         icon: BsGithub,
         address: "https://github.com/erfansormi",
+        name: "github"
     },
     {
         icon: BsTelegram,
         address: "https://t.me/buys_sales",
+        name: "telegram"
     }
 ]
 

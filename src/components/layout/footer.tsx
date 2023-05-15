@@ -23,6 +23,7 @@ const Footer = () => {
                                     href={item.address}
                                     target='_blank'
                                     className='secondary-text hover-primary-text'
+                                    aria-label={`Contact me via ${item.name}`}
                                 >
                                     {<item.icon />}
                                 </a>

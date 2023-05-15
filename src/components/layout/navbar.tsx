@@ -31,6 +31,7 @@ const Navbar = () => {
                             sx={(theme) => ({
                                 color: theme.colorScheme === 'dark' ? theme.colors.yellow[4] : theme.colors.blue[6],
                             })}
+                            aria-label={`${colorScheme} mode`}
                         >
                             {colorScheme === 'dark' ? <TbSunHigh size="1.2rem" /> : <TbMoonStars size="1.2rem" />}
                         </ActionIcon>
@@ -45,7 +46,7 @@ const Navbar = () => {
                 {/* sidebar */}
                 {/* (if size >= lg) display:none */}
                 <div className='lg:hidden' onClick={open}>
-                    <ActionIcon>
+                    <ActionIcon aria-label='sidebar opener'>
                         <GoKebabVertical />
                     </ActionIcon>
                 </div>
