@@ -93,7 +93,7 @@ const ScrollbarContent = ({ bottomFooterRef, topBoxRef }: Props) => {
                 style={{ marginBottom: bottomFooterRef.current ? bottomFooterRef.current.clientHeight : 100 }}
             >
                 <a
-                    href='/my-resume.pdf'
+                    href='/resume.pdf'
                     className='flex items-center gap-x-1 hover-primary-text'
                 >
                     <span className='text-sm uppercase font-medium'>

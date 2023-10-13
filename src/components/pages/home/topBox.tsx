@@ -37,7 +37,7 @@ const TopBox = () => {
                                     {t("welcome")}
                                 </h2>
                                 <div className='flex justify-center'>
-                                    <p className='w-4/5'>
+                                    <p className='w-4/5 font-normal'>
                                         {t("about")}
                                     </p>
                                 </div>

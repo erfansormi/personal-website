@@ -41,11 +41,11 @@ const ProjectCard = ({ data }: { data: Project }) => {
                         {/* technologies */}
                         <div className='flex flex-col gap-3'>
                             <div>
-                                <h6>
+                                <h6 className='font-medium'>
                                     {t("projects.technologies")}
                                 </h6>
                             </div>
-                            <ul className='flex flex-col justify-center gap-1.5 capitalize marker:text-blue-800 dark:marker:text-yellow-600 list-disc'>
+                            <ul className='flex flex-col font-normal justify-center gap-1.5 capitalize marker:text-blue-800 dark:marker:text-yellow-600 list-disc'>
                                 {
                                     data.technologies.map((item, index) =>
                                         <li
@@ -97,11 +97,14 @@ const ProjectCard = ({ data }: { data: Project }) => {
                                 {t("projects.website")}
                             </Button>
                         </a>
-                        <a href={data.github} target='_blank'>
-                            <Button variant='outline'>
-                                {t("projects.github")}
-                            </Button>
-                        </a>
+                        {
+                            data.github &&
+                            <a href={data.github} target='_blank'>
+                                <Button variant='outline'>
+                                    {t("projects.github")}
+                                </Button>
+                            </a>
+                        }
                     </div>
                 </figcaption>
             </figure>

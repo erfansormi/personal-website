@@ -11,7 +11,7 @@ export interface Project {
     level: Level,
     image: string,
     website: string,
-    github: string,
+    github?: string,
     title: string
 }
 

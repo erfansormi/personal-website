@@ -34,6 +34,11 @@ export const skillsData: SkillData = {
             image: "/github.png"
         },
         {
+            title: "javascript / es7",
+            level: "پیشرفته",
+            image: "/js.png"
+        },
+        {
             title: "typescript",
             level: "متوسط",
             image: "/typescript.png"
@@ -64,6 +69,16 @@ export const skillsData: SkillData = {
             image: "/mantine.png"
         },
         {
+            title: "restful api",
+            image: "/rest-api.svg",
+            level: "پیشرفته"
+        },
+        {
+            title: "react query",
+            level: "پیشرفته",
+            image: "/react-query.png"
+        },
+        {
             title: "express js",
             level: "ابتدایی",
             image: "/expressjs.png"
@@ -72,6 +87,11 @@ export const skillsData: SkillData = {
             title: "mongo db",
             level: "ابتدایی",
             image: "/mongodb.png"
+        },
+        {
+            title: "postman",
+            level: "متوسط",
+            image: "/postman.png"
         }
     ],
     en: [
@@ -96,6 +116,11 @@ export const skillsData: SkillData = {
             image: "/github.png"
         },
         {
+            title: "javascript / es7",
+            level: "advanced",
+            image: "/js.png"
+        },
+        {
             title: "typescript",
             level: "intermediate",
             image: "/typescript.png"
@@ -126,6 +151,16 @@ export const skillsData: SkillData = {
             image: "/mantine.png"
         },
         {
+            title: "restful api",
+            image: "/rest-api.svg",
+            level: "advanced"
+        },
+        {
+            title: "react query",
+            level: "advanced",
+            image: "/react-query.png"
+        },
+        {
             title: "express js",
             level: "beginner",
             image: "/expressjs.png"
@@ -134,12 +169,62 @@ export const skillsData: SkillData = {
             title: "mongo db",
             level: "beginner",
             image: "/mongodb.png"
+        },
+        {
+            title: "postman",
+            level: "intermediate",
+            image: "/postman.png"
         }
     ]
 }
 
 export const projectData: ProjectData = {
     fa: [
+        {
+            attributes: [
+                "امکان ساخت مقاله و انتشار آن",
+                "ذخیره اتوماتیک پست در پیش نویس",
+                "امکان ثبت کامنت و لایک کامنت ها",
+                "لایک مقاله ها و یا ذخیره آنها",
+                "امکان دنبال کردن دیگر کاربران",
+                "پنل کاربری با امکانات متنوع",
+                "امکان جستجو مقاله ها یا کاربران"
+            ],
+            technologies: [
+                {
+                    image: "/editorjs.svg",
+                    title: "editor js"
+                },
+                {
+                    image: "/tailwind.svg",
+                    title: "تیلویند"
+                },
+                {
+                    image: "/typescript.png",
+                    title: "تایپ اسکریپت"
+                },
+                {
+                    image: "/mantine.png",
+                    title: "mantine"
+                },
+                {
+                    image: "/react-query.png",
+                    title: "react query"
+                },
+                {
+                    image: "/nextjs.png",
+                    title: "next js"
+                },
+                {
+                    image: "/mongodb.png",
+                    title: "مونگو دی بی"
+                }
+            ],
+            website: "https://comma-blog.iran.liara.run/",
+            image: "/comma.png",
+            level: "پیشرفته",
+            title: "وبلاگ کاما"
+        },
         {
             attributes: [
                 "استفاده از next js و خصوصیت ssr",
@@ -214,6 +299,50 @@ export const projectData: ProjectData = {
         }
     ],
     en: [
+        {
+            attributes: [
+                "Possibility of making an article and publishing it",
+                "Automatic saving of post in draft",
+                "Like articles or save them",
+                "Ability to follow other users",
+                "User panel with various features",
+                "Possibility to search for articles or users"
+            ],
+            technologies: [
+                {
+                    image: "/editorjs.svg",
+                    title: "editor js"
+                },
+                {
+                    image: "/tailwind.svg",
+                    title: "tailwind css"
+                },
+                {
+                    image: "/typescript.png",
+                    title: "typescript"
+                },
+                {
+                    image: "/mantine.png",
+                    title: "mantine"
+                },
+                {
+                    image: "/react-query.png",
+                    title: "react query"
+                },
+                {
+                    image: "/nextjs.png",
+                    title: "next js"
+                },
+                {
+                    image: "/mongodb.png",
+                    title: "mongodb"
+                }
+            ],
+            website: "https://comma-blog.iran.liara.run/",
+            image: "/comma.png",
+            level: "advanced",
+            title: "comma blog"
+        },
         {
             attributes: [
                 "using next js and ssr feature",
