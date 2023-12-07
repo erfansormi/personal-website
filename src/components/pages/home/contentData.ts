@@ -220,7 +220,7 @@ export const projectData: ProjectData = {
                     title: "مونگو دی بی"
                 }
             ],
-            website: "https://comma-blog.iran.liara.run/",
+            website: "https://comma-blog.vercel.app/",
             image: "/comma.png",
             level: "پیشرفته",
             title: "وبلاگ کاما"
@@ -338,7 +338,7 @@ export const projectData: ProjectData = {
                     title: "mongodb"
                 }
             ],
-            website: "https://comma-blog.iran.liara.run/",
+            website: "https://comma-blog.vercel.app/",
             image: "/comma.png",
             level: "advanced",
             title: "comma blog"
