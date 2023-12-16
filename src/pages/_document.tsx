@@ -1,19 +1,22 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ColorSchemeScript } from "@mantine/core"
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
 class MyDocument extends Document {
   render() {
-    const { locale } = this.props.__NEXT_DATA__;
+    const { locale } = this.props.__NEXT_DATA__
 
     return (
-      <Html lang={locale} className='dark' dir={locale === "fa" ? "rtl" : "ltr"}>
-        <Head />
+      <Html lang={locale} className="dark" dir={locale === "fa" ? "rtl" : "ltr"}>
+        <Head>
+          <ColorSchemeScript defaultColorScheme="dark" />
+        </Head>
         <body className={`dark:bg-dark-800 bg-light-100 primary-text`}>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument
