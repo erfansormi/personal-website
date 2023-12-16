@@ -24,7 +24,7 @@ export const skillsData: SkillData = {
             image: "/sass.png"
         },
         {
-            title: "tailwind css",
+            title: "tailwind CSS",
             level: "پیشرفته",
             image: "/tailwind.svg"
         },
@@ -34,7 +34,7 @@ export const skillsData: SkillData = {
             image: "/github.png"
         },
         {
-            title: "javascript / es7",
+            title: "javascript / ES7",
             level: "پیشرفته",
             image: "/js.png"
         },
@@ -44,7 +44,7 @@ export const skillsData: SkillData = {
             image: "/typescript.png"
         },
         {
-            title: "react js",
+            title: "react JS",
             level: "پیشرفته",
             image: "/reactjs.png"
         },
@@ -54,12 +54,12 @@ export const skillsData: SkillData = {
             image: "/redux.webp"
         },
         {
-            title: "next js",
+            title: "next JS",
             level: "پیشرفته",
             image: "/nextjs.png"
         },
         {
-            title: "mui",
+            title: "MUI",
             level: "پیشرفته",
             image: "/mui.png"
         },
@@ -69,7 +69,7 @@ export const skillsData: SkillData = {
             image: "/mantine.png"
         },
         {
-            title: "restful api",
+            title: "restful API",
             image: "/rest-api.svg",
             level: "پیشرفته"
         },
@@ -79,12 +79,12 @@ export const skillsData: SkillData = {
             image: "/react-query.png"
         },
         {
-            title: "express js",
+            title: "express JS",
             level: "ابتدایی",
             image: "/expressjs.png"
         },
         {
-            title: "mongo db",
+            title: "mongo DB",
             level: "ابتدایی",
             image: "/mongodb.png"
         },
@@ -106,7 +106,7 @@ export const skillsData: SkillData = {
             image: "/sass.png"
         },
         {
-            title: "tailwind css",
+            title: "tailwind CSS",
             level: "advanced",
             image: "/tailwind.svg"
         },
@@ -116,7 +116,7 @@ export const skillsData: SkillData = {
             image: "/github.png"
         },
         {
-            title: "javascript / es7",
+            title: "javascript / ES7",
             level: "advanced",
             image: "/js.png"
         },
@@ -126,7 +126,7 @@ export const skillsData: SkillData = {
             image: "/typescript.png"
         },
         {
-            title: "react js",
+            title: "react JS",
             level: "advanced",
             image: "/reactjs.png"
         },
@@ -136,12 +136,12 @@ export const skillsData: SkillData = {
             image: "/redux.webp"
         },
         {
-            title: "next js",
+            title: "next JS",
             level: "advanced",
             image: "/nextjs.png"
         },
         {
-            title: "mui",
+            title: "MUI",
             level: "advanced",
             image: "/mui.png"
         },
@@ -151,7 +151,7 @@ export const skillsData: SkillData = {
             image: "/mantine.png"
         },
         {
-            title: "restful api",
+            title: "restful API",
             image: "/rest-api.svg",
             level: "advanced"
         },
@@ -161,12 +161,12 @@ export const skillsData: SkillData = {
             image: "/react-query.png"
         },
         {
-            title: "express js",
+            title: "express JS",
             level: "beginner",
             image: "/expressjs.png"
         },
         {
-            title: "mongo db",
+            title: "mongo DB",
             level: "beginner",
             image: "/mongodb.png"
         },
@@ -193,7 +193,7 @@ export const projectData: ProjectData = {
             technologies: [
                 {
                     image: "/editorjs.svg",
-                    title: "editor js"
+                    title: "editor JS"
                 },
                 {
                     image: "/tailwind.svg",
@@ -213,7 +213,7 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/nextjs.png",
-                    title: "next js"
+                    title: "next JS"
                 },
                 {
                     image: "/mongodb.png",
@@ -227,7 +227,7 @@ export const projectData: ProjectData = {
         },
         {
             attributes: [
-                "استفاده از next js و خصوصیت ssr",
+                "استفاده از next JS و خصوصیت ssr",
                 "طراحی پنل کاربری",
                 "استفاده از نقشه برای ذخیره لوکیشن کاربر",
                 "امکان ثبت نام و ورود به همراه اعتبارسنجی",
@@ -240,7 +240,7 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/mui.png",
-                    title: "mui"
+                    title: "MUI"
                 },
                 {
                     image: "/typescript.png",
@@ -248,11 +248,11 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/nextjs.png",
-                    title: "next js"
+                    title: "next JS"
                 },
                 {
                     image: "/expressjs.png",
-                    title: "express js"
+                    title: "express JS"
                 },
                 {
                     image: "/mongodb.png",
@@ -267,7 +267,7 @@ export const projectData: ProjectData = {
         },
         {
             attributes: [
-                "استفاده از next js و خصوصیت ssr",
+                "استفاده از next JS و خصوصیت ssr",
                 "دارای حالت تاریک",
                 "دارای چارت هر ارز به صورت خطی و شمعی",
                 "pagination",
@@ -280,7 +280,7 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/mui.png",
-                    title: "mui"
+                    title: "MUI"
                 },
                 {
                     image: "/typescript.png",
@@ -288,7 +288,7 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/nextjs.png",
-                    title: "next js"
+                    title: "next JS"
                 },
             ],
             github: "https://github.com/erfansormi/crypto-currency",
@@ -311,11 +311,11 @@ export const projectData: ProjectData = {
             technologies: [
                 {
                     image: "/editorjs.svg",
-                    title: "editor js"
+                    title: "editor JS"
                 },
                 {
                     image: "/tailwind.svg",
-                    title: "tailwind css"
+                    title: "tailwind CSS"
                 },
                 {
                     image: "/typescript.png",
@@ -331,7 +331,7 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/nextjs.png",
-                    title: "next js"
+                    title: "next JS"
                 },
                 {
                     image: "/mongodb.png",
@@ -345,7 +345,7 @@ export const projectData: ProjectData = {
         },
         {
             attributes: [
-                "using next js and ssr feature",
+                "using next JS and ssr feature",
                 "user panel design",
                 "using the map to store the user's location",
                 "possibility of registration and login with validation",
@@ -354,11 +354,11 @@ export const projectData: ProjectData = {
             technologies: [
                 {
                     image: "/tailwind.svg",
-                    title: "tailwind css"
+                    title: "tailwind CSS"
                 },
                 {
                     image: "/mui.png",
-                    title: "mui"
+                    title: "MUI"
                 },
                 {
                     image: "/typescript.png",
@@ -366,15 +366,15 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/nextjs.png",
-                    title: "next js"
+                    title: "next JS"
                 },
                 {
                     image: "/expressjs.png",
-                    title: "express js"
+                    title: "express JS"
                 },
                 {
                     image: "/mongodb.png",
-                    title: "mongo db"
+                    title: "mongo DB"
                 }
             ],
             github: "https://github.com/erfansormi/online-shop",
@@ -385,7 +385,7 @@ export const projectData: ProjectData = {
         },
         {
             attributes: [
-                "using next js and ssr feature",
+                "using next JS and ssr feature",
                 "having a Dark Mode",
                 "has a chart of each currency in a linear and candlestick format",
                 "pagination",
@@ -398,7 +398,7 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/mui.png",
-                    title: "mui"
+                    title: "MUI"
                 },
                 {
                     image: "/typescript.png",
@@ -406,7 +406,7 @@ export const projectData: ProjectData = {
                 },
                 {
                     image: "/nextjs.png",
-                    title: "next js"
+                    title: "next JS"
                 },
             ],
             github: "https://github.com/erfansormi/crypto-currency",
