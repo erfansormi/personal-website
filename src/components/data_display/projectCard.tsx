@@ -23,7 +23,7 @@ const ProjectCard = ({ data }: { data: Project }) => {
             <Image
               width={400}
               height={208}
-              quality={70}
+              quality={80}
               src={data.image}
               alt={`${data.title} project`}
               className="xl:object-cover object-contain rounded"

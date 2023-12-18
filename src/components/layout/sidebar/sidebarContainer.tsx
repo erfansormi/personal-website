@@ -32,7 +32,7 @@ const SidebarContainer = ({ className }: { className?: string }) => {
               priority
               width={96}
               height={96}
-              quality={75}
+              quality={82}
               alt="Erfan Sormi"
               src={"/erfansormi-1.jpg"}
               className="object-cover rounded-full"
