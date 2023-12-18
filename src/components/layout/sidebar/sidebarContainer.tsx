@@ -27,17 +27,15 @@ const SidebarContainer = ({ className }: { className?: string }) => {
       >
         <div className="flex flex-col gap-2 items-center">
           {/* picture */}
-          <div className="w-24 h-24 relative">
+          <div className="overflow-hidden">
             <Image
-              fill
+              priority
+              width={96}
+              height={96}
+              quality={75}
               alt="Erfan Sormi"
               src={"/erfansormi-1.jpg"}
               className="object-cover rounded-full"
-              quality={85}
-              sizes="(max-width: 400px) 32vw,
-                            (max-width: 768px) 22vw,
-                            (max-width: 1024px) 14vw,
-                            8vw"
             />
           </div>
 

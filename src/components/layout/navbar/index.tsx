@@ -1,15 +1,14 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 // icons
-import { IoClose } from "react-icons/io5";
 import { GoKebabVertical } from "react-icons/go";
 
 // components
-import { Drawer } from "@mantine/core";
 import { ActionIcon } from "@mantine/core";
 import ChangeLanguage from "./changeLanguage";
 import ChangeThemeMode from "./changeThemeMode";
-import SidebarContainer from "../sidebar/sidebarContainer";
+const MobileSidebar = dynamic(() => import("./MobileSidebar"));
 
 // mantine hooks
 import { useDisclosure } from "@mantine/hooks";
@@ -30,27 +29,16 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* sidebar */}
+        {/* show mobile sidebar icon */}
         {/* (if size >= lg) display:none */}
         <div className="lg:hidden" onClick={open}>
-          <ActionIcon aria-label="sidebar opener">
+          <ActionIcon aria-label="sidebar opener" variant="subtle">
             <GoKebabVertical />
           </ActionIcon>
         </div>
 
-        <Drawer
-          opened={opened}
-          onClose={close}
-          withCloseButton={false}
-          size={360}
-          padding={0}
-          style={{ position: "relative" }}
-        >
-          <SidebarContainer className="h-screen" />
-          <ActionIcon className="absolute top-1 end-1" onClick={close}>
-            <IoClose className="text-2xl" />
-          </ActionIcon>
-        </Drawer>
+        {/* mobile sidebar */}
+        <MobileSidebar opened={opened} close={close} />
       </div>
     </nav>
   );
