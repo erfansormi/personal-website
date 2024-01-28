@@ -102,7 +102,7 @@ export const socialNetworksData = [
   },
   {
     icon: BsTelegram,
-    address: "https://t.me/buys_sales",
+    address: "https://t.me/erfan_sormi",
     name: "telegram",
   },
 ];
